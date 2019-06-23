@@ -1,0 +1,6 @@
+[submodule ".emacs.d"]
+	path = .emacs.d
+	url = https://github.com/BillBai/prelude.git
+[submodule ".vim_runtime"]
+	path = .vim_runtime
+	url = https://github.com/amix/vimrc.git

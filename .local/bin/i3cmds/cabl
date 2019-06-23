@@ -10,11 +10,12 @@ cd "$(readlink /proc/"$PID"/cwd)"
 [ -f "$prim" ] && xdg-open "$prim" && exit
 [ -d "$prim" ] && "$TERMINAL" "$prim" && exit
 
-websearch() { "$BROWSER" "https://duckduckgo.com/?q=$@" ;}
+ggsearch() { "$BROWSER" "https://google.com/?q=$@" ;}
+ducksearch() { "$BROWSER" "https://duckduckgo.com/?q=$@" ;}
 wikipedia() { "$BROWSER" "https://en.wikipedia.org/wiki/$@" ;}
 wiktionary() { "$BROWSER" "https://en.wiktionary.org/wiki/$@" ;}
-maps() { "$BROWSER" "https://www.openstreetmap.org/search?query=$@" ;}
-ebay() { "$BROWSER" "https://www.ebay.com/sch/$@" ;}
+# maps() { "$BROWSER" "https://www.openstreetmap.org/search?query=$@" ;}
+# ebay() { "$BROWSER" "https://www.ebay.com/sch/$@" ;}
 
 echo "$prim" | grep "^.*\.[A-Za-z]\+.*" >/dev/null && gotourl() { "$BROWSER" "$@" ;}
 echo "$prim" | grep "^.*@.*\.[A-Za-z]\+$" >/dev/null && email() { xdg-email "$@" ;}
