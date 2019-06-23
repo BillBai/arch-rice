@@ -5,8 +5,10 @@ super + d
 	dmenu_run
 super + r
 	$TERMINAL -e $FILE
-super + e
-	$TERMINAL -e neomutt
+# super + e
+# 	emacs
+super + shift + e
+	emacs
 super + m
 	$TERMINAL -e ncmpcpp
 super + n
@@ -17,12 +19,12 @@ super + y
 	$TERMINAL -e calcurse
 super + shift + a
 	$TERMINAL -e pulsemixer; pkill -RTMIN+10 i3blocks
-super + shift + c
-	camtoggle
-super + shift + e
-	tutorialvids
-super + w
-	webby | xargs -r $BROWSER
+# super + shift + c
+#	camtoggle
+# super + shift + e
+# 	tutorialvids
+# super + w
+#	webby | xargs -r $BROWSER
 super + shift + w
 	$BROWSER
 super + shift + g
